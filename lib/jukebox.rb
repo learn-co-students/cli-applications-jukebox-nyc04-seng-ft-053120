@@ -23,8 +23,8 @@ def play(songs)
       puts "Invalid input, please try again"
       return
     end
-    
-    puts "Playing #{songs[input_num-1]}"
+    song_idx = input_num - 1
+    puts "Playing #{songs[song_idx]}"
     return
   else
     songs.each do |song|
